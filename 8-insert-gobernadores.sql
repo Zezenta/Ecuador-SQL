@@ -1,0 +1,26 @@
+USE ecuador;
+
+INSERT INTO gobernadores(nombre, genero, posesion, provincia_id) VALUES
+("Ronald Lizandro Muñoz Cedeño", "hombre", "2024-05-10", (SELECT id FROM provincias WHERE nombre = "Manabí")),
+("Luis Santiago Malo Gonzáles", "hombre", "2024-03-19", (SELECT id FROM provincias WHERE nombre = "Azuay")),
+("Ramiro Oswaldo Jaramillo Cisneros", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Bolívar")),
+("René Patricio Sarmiento Sarmiento", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Cañar")),
+("Brígida Lucía Pozo Moreta", "mujer", "2024-05-10", (SELECT id FROM provincias WHERE nombre = "Carchi")),
+("Rodrigo Fabricio Cáceres Veloz", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Chimborazo")),
+("Iván Trajano Navas Chacón", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Cotopaxi")),
+("Jimmy Roberto Blacio Ochoa", "hombre", "2023-12-05", (SELECT id FROM provincias WHERE nombre = "El Oro")),
+("Coronel Javier Buitrón Flores", "hombre", "2024-01-10", (SELECT id FROM provincias WHERE nombre = "Esmeraldas")),
+("Juan Sebastián Echeverría Penagos", "hombre", "2024-03-19", (SELECT id FROM provincias WHERE nombre = "Imbabura")),
+("Paul Mauricio Aguilar Sotomayor", "hombre", "2023-12-11", (SELECT id FROM provincias WHERE nombre = "Loja")),
+("Luis Alfonso Martínez Berrazueta", "hombre", "2024-05-10", (SELECT id FROM provincias WHERE nombre = "Los Ríos")),
+("Sixto Vinicio Cóndor García", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Morona Santiago")),
+("María Marlene Cabrera Ureña", "mujer", "2023-12-11", (SELECT id FROM provincias WHERE nombre = "Napo")),
+("Nuria Rocío Vega Morillo", "mujer", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Orellana")),
+("Guido Rolando Ramos Carrasco", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Pastaza")),
+("Jorge Fabricio Tamayo Triviño", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Santa Elena")),
+("Wuilmer Hernán Mora Vásquez", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Sucumbíos")),
+("Luis Santaigo Vargas Salman", "hombre", "2023-12-05", (SELECT id FROM provincias WHERE nombre = "Tungurahua")),
+("Francisco Xavier Mesías Hidalgo", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Zamora Chinchipe")),
+("Edwin Byron Altamirano Trujillo", "hombre", "2023-12-04", (SELECT id FROM provincias WHERE nombre = "Galápagos")),
+("Miguel Antonio Quezada Ludeña", "hombre", "2023-12-12", (SELECT id FROM provincias WHERE nombre = "Santo Domingo de los Tsáchilas")),
+("Vicente Antonio Auad Cevasco", "hombre", "2023-04-25", (SELECT id FROM provincias WHERE nombre = "Guayas"));

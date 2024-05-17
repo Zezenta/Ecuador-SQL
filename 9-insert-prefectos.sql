@@ -1,0 +1,26 @@
+USE ecuador;
+
+INSERT INTO prefectos(nombre, genero, partido_id, provincia_id) VALUES
+("Leonardo Orlando Arteaga", "hombre", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Manabí")),
+("Juan Cristóbal Lloret Valdivieso", "hombre", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Azuay")),
+("Aníbal Coronel Monar", "hombre", (SELECT id FROM partidos WHERE nombre = "Pachakutik"), (SELECT id FROM provincias WHERE nombre = "Bolívar")),
+("Marcelo Jaramillo Calle", "hombre", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Cañar")),
+("Julio Robles Guevara", "hombre", (SELECT id FROM partidos WHERE nombre = "Movimiento Social Conservador del Carchi"), (SELECT id FROM provincias WHERE nombre = "Carchi")),
+("Hermel Tayupanda Cuvi", "hombre", (SELECT id FROM partidos WHERE nombre = "Izquierda Democrática"), (SELECT id FROM provincias WHERE nombre = "Chimborazo")),
+("Lourdes Tibán Guala", "mujer", (SELECT id FROM partidos WHERE nombre = "Pachakutik"), (SELECT id FROM provincias WHERE nombre = "Cotopaxi")),
+("Clemente Bravo Riofrío", "hombre", (SELECT id FROM partidos WHERE nombre = "Sur Unido Regional"), (SELECT id FROM provincias WHERE nombre = "El Oro")),
+("Roberta Zambrano Ortiz", "mujer", (SELECT id FROM partidos WHERE nombre = "Partido Social Cristiano"), (SELECT id FROM provincias WHERE nombre = "Esmeraldas")),
+("Marcela Aguiñaga Vallejo", "mujer", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Guayas")),
+("Richard Calderón Saltos", "hombre", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Imbabura")),
+("Mario Mancino Valdivieso", "hombre", (SELECT id FROM partidos WHERE nombre = "Sociedad Unida Más Acción"), (SELECT id FROM provincias WHERE nombre = "Loja")),
+("Johnny Terán Salcedo", "hombre", (SELECT id FROM partidos WHERE nombre = "Partido Social Cristiano"), (SELECT id FROM provincias WHERE nombre = "Los Ríos")),
+("Tiyua Uyunkar Kaniras", "hombre", (SELECT id FROM partidos WHERE nombre = "Pachakutik"), (SELECT id FROM provincias WHERE nombre = "Morona Santiago")),
+("José Toapanta Bastidas", "hombre", (SELECT id FROM partidos WHERE nombre = "Pachakutik"), (SELECT id FROM provincias WHERE nombre = "Napo")),
+("Magali Orellana Marquínez", "mujer", (SELECT id FROM partidos WHERE nombre = "Unidad Popular"), (SELECT id FROM provincias WHERE nombre = "Orellana")),
+("André Granda Garrido", "hombre", (SELECT id FROM partidos WHERE nombre = "Semilla"), (SELECT id FROM provincias WHERE nombre = "Pastaza")),
+("Paola Pabón Caranqui", "mujer", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Pichincha")),
+("José Daniel Villao Villao", "hombre", (SELECT id FROM partidos WHERE nombre = "Movimiento Político Peninsular Creyendo Nuestra Gente"), (SELECT id FROM provincias WHERE nombre = "Santa Elena")),
+("Johana Núñez García", "mujer", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Santo Domingo de los Tsáchilas")),
+("Yofre Poma Herrera", "hombre", (SELECT id FROM partidos WHERE nombre = "Revolución Ciudadana"), (SELECT id FROM provincias WHERE nombre = "Sucumbíos")),
+("Manuel Caizabanda Jerez", "hombre", (SELECT id FROM partidos WHERE nombre = "Pachakutik"), (SELECT id FROM provincias WHERE nombre = "Tungurahua")),
+("Karla Reátegui Encarnación", "mujer", (SELECT id FROM partidos WHERE nombre = "Pachakutik"), (SELECT id FROM provincias WHERE nombre = "Zamora Chinchipe"));
